@@ -95,6 +95,13 @@ Importer.withExports(TestExported) {
 ```
 
 Clearing exports
+----------------
+
+```scala
+Importer.withNoExports {
+    assert(Import.optional[MyTrait] == None)
+}
+```
 
 Gotchas
 -------
